@@ -1,0 +1,15 @@
+[
+    {
+      "id": 1,
+      "image": "student.jpg",
+      "name": "Shivam",
+      "course": "Computer Science"
+    },
+    {
+      "id": 2,
+      "image": "student.jpg",
+      "name": "Priyanshu",
+      "course": "Electronics"
+    }
+    
+  ]
