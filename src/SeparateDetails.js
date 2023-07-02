@@ -8,9 +8,11 @@ const SeparateDetails = () => {
   const course = queryParams.get('course');
 
   return (
-    <div>
+      <div>
+    <center>
       <h2>{name}</h2>
       <p>Course: {course}</p>
+    </center>
     </div>
   );
 };
