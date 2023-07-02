@@ -1,18 +1,16 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 
-const SeparateDetails = ({ location }) => {
-    const {student} = this.state;
-    // if(!student){
-    //     return(
-    //         <center> <div>No Student Data to Display!</div> </center>
-    //     )
-    // }
+const SeparateDetails = () => {
+  const location = useLocation();
+  const queryParams = new URLSearchParams(location.search);
+  const name = queryParams.get('name');
+  const course = queryParams.get('course');
 
   return (
     <div>
-      <h2>{student.name}</h2>
-      <p>ID: {student.id}</p>
-      <p>Course: {student.course}</p>
+      <h2>{name}</h2>
+      <p>Course: {course}</p>
     </div>
   );
 };

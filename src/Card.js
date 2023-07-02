@@ -12,12 +12,7 @@ const Card = ({ student }) => {
         <p>ID: {student.id}</p>
 
         <button Style={"background: #0d6efd; border-radius:5px;"}>
-        <Link Style={" text-decoration:none; color:white;"} to={{
-          pathname: `/student/${student.id}`,
-          state: {
-            student: student
-          }
-        }}>Details</Link>
+        <Link Style={" text-decoration:none; color:white;"} to={`/student/${student.id}?name=${encodeURIComponent(student.name)}&course=${encodeURIComponent(student.course)}`}>Details</Link>
         
         </button>
       </div>
